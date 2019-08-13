@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Marvel Comics Character Search</title>
+	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="float-grid.css">
 	<link rel="stylesheet" type="text/css" href="marvel.css">
 </head>
@@ -13,7 +14,8 @@
 		<div class="col-10">
 			<form class="character-form js-character">
 				<label>Enter the name of a Marvel character to find their comics</label>
-				<input type="text" name="character-search" placeholder="e.g. Daredevil">
+				<input class="js-input" type="text" name="character-search" placeholder="e.g. Daredevil">
+				<button type="text">Search</button>
 			</form>
 		</div>
 	</div>
@@ -26,7 +28,16 @@
 	<section class="js-results">
 
 	</section>
-
+	<div class="row">
+		<div class="col-12">
+			<section class="prevnextbuttons hidden">
+				<button class="prev">◄ PREV</button>
+				<button class="next">NEXT ►</button>
+			</section>
+		</div>
+	</div>
+	<!-- ADD NEXT AND PREVIOUS BUTTONS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript" src="marvel.js"></script>
 </body>
 </html>
